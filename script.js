@@ -54,7 +54,7 @@ function changeLanguage() {
 // esto esta interesante ponerselo a algo con efectos de escribir
 document.addEventListener("DOMContentLoaded", function() {
     let typed = new Typed('.typing-effect', {
-        strings: ['Developer Junior Python','Data Engineer','Software engineer', 'Web Developer ','Freelancer' ,'Developer Junior Java'],
+        strings: ['Junior Developer Python','Data Engineer','Software Engineer', 'Web Developer ','Freelancer' ,'Junior Developer Java'],
         typeSpeed: 100,
         backSpeed: 100,
         BackDelay: 2000, // Corregido: "BackDelay" a "backDelay"
