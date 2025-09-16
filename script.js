@@ -156,6 +156,28 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Copiar al portapapeles
+    const copyButtons = document.querySelectorAll('.btn-copy');
+    
+    copyButtons.forEach(button => {
+     button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const textToCopy = button.getAttribute('data-copy');
+      
+      navigator.clipboard.writeText(textToCopy).then(() => {
+       // Efecto visual de copiado
+       button.innerHTML = '<i class="fa-solid fa-check"></i>';
+       setTimeout(() => {
+        button.innerHTML = '<i class="fa-solid fa-copy"></i>';
+       }, 1500);
+      }).catch(err => {
+       console.error('Error al copiar:', err);
+      });
+     });
+    });
+   });
+
 
 
   

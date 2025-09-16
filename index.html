@@ -4,6 +4,8 @@
     <meta charset="UTF-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- En la sección <head> de tu HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9LMFB1+3pUnsyqwg+DjY7XMoIn/jmzWqjFaL8n3sFbhL2xNuaJCOyD4ZUsTNFmhDlVaziWXWYzKyIw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
         <!-- CSS FILE -->
     <link rel="stylesheet" href="style.css">
@@ -17,7 +19,7 @@
     <header>
         <!-- Profile -->
         <div class="profile">
-            <img src="img/JuanRojas.jpeg" alt="" width="150px">
+            <img src="img/Cuadrado.jpeg" alt="" width="150px">
             <h1>Juan Felipe Rojas Muñoz</h1>
             <div class="social-icons">
                 <a href="https://www.facebook.com/juanfelipe.rojas.5203/" target="_blank">
@@ -72,61 +74,95 @@
             <div class="home-row">
                 <h1 id="title">Hi, I'm a <br>Pipe Rojas</h1><span> . </span>
                 <p id="phrase">I'm <span class="auto-input"> Software Engineer</span></p>
-                <a href="pdf/CV Juan Felipe Rojas Muñoz.pdf"target="_blank">Download CV <i class="fa-solid fa-download"></i></a>
+                <a href="pdf/CV Juan Felipe Rojas Muñoz 2024 -2-2.pdf"target="_blank">Download CV <i class="fas fa-download"></i></a>
             </div>
         </section>
         <!-- Home section end -->
 
         <!-- About section start -->
-        <section id="about">
-
-            <h1 class="sub-heading">About Me</h1>
-            <div class="divider"></div>
-            <p class="sub-para">
-                ¡Hola! 👋 Soy Juan Felipe Rojas, estudiante de ingeniería en ciencias de la computación y inteligencia artificial 🎓. Mi pasión por la tecnología y los datos me impulsa a crear soluciones eficientes y efectivas para desafíos del mundo real.
-
-                Desde los 16 años, he estado inmerso en el campo  de la programación e ingeniería, centrándome en Python y Java. Continuo
-                ampliando mis conocimientos a través de la educación autodidacta, la obtención de certificaciones en plataformas educativas de renombre y cursando 5 semestre en la Universidad.
-                
-                Mi objetivo es mantenerme al tanto de las últimas tendencias y aplicar mis habilidades en proyectos innovadores de inteligencia artificial que generen un impacto positivo en la sociedad y el mundo 🌎. Estoy listo para enfrentar desafíos apasionantes y seguir aprendiendo para marcar la diferencia. 💪🏼
-            </p>
-
-             <!-- About section start-->
-            <div class="about-col">
-                <!-- img-col -->
-                <div class="img-col">
-                    <img src="img/cocora.jpeg" alt="...">
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">About Me</h1>
+                    <div class="section-divider"></div>
                 </div>
                 
-                <!-- Information -->
-                <div class="info-col">
-                    <h2>I am a <span class="typing-effect"> </span></h2>
-                    <p class="sub-para"> </p>
-                    <div class="icon-list-col">
-
-
-                        <!-- Left-Side list -->
-                        <div class="icon-list">
-                            <ul>
-                                <li><i class="fas fa-angle-right"></i><strong>Name:</strong><span> Juan Felipe Rojas Muñoz</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>Birthday :</strong><span> 19/June/2004</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>Phone:</strong><span> +57 3173324433</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>E-mail:</strong><span> juanferojas19@gmail.com</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>City:</strong><span> Bogotá, Colombia</span></li>
-                            </ul>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="img/cocora.jpeg" alt="Juan Felipe Rojas" class="profile-image">
                         </div>
-
-                        <!-- Right-Side list -->
-                        <div class="icon-list">
-                            <ul>
-                                <li><i class="fas fa-angle-right"></i><strong>Nickname:</strong><span> Pipe Rojas</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>Age:</strong><span> 19</span></li>
-                              <!--  <li><i class="fas fa-angle-right"></i><strong>Website:</strong><span> www.comoquede.com</span></li> --> 
-                                <li><i class="fas fa-angle-right"></i><strong>Freelancer:</strong><span> Available</span></li>
-                                <li><i class="fas fa-angle-right"></i><strong>Languages:</strong><span> Spanish - English</span></li>
-                            </ul>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="about-intro">
+                            <h2 class="greeting">¡Hola! 👋</h2>
+                            <p class="description">
+                                Soy Juan Felipe Rojas, estudiante de ingeniería en ciencias de la computación y inteligencia artificial 🎓. Mi pasión por la tecnología y los datos me impulsa a crear soluciones eficientes y efectivas para desafíos del mundo real.
+                            </p>
                         </div>
-
+                        
+                        <div class="about-bio">
+                            <p>
+                                Desde los 16 años, he estado inmerso en el campo de la programación e ingeniería, centrándome en Python y Java. Continuo ampliando mis conocimientos a través de la educación autodidacta, la obtención de certificaciones en plataformas educativas de renombre y cursando 5 semestre en la Universidad.
+                            </p>
+                            <p>
+                                Mi objetivo es mantenerme al tanto de las últimas tendencias y aplicar mis habilidades en proyectos innovadores de inteligencia artificial que generen un impacto positivo en la sociedad y el mundo 🌎. Estoy listo para enfrentar desafíos apasionantes y seguir aprendiendo para marcar la diferencia. 💪🏼
+                            </p>
+                        </div>
+                        
+                        <div class="personal-info">
+                            <div class="info-grid">
+                                <div class="info-column">
+                                    <div class="info-item">
+                                        <i class="fas fa-user"></i>
+                                        <span class="label">Name:</span>
+                                        <span class="value">Juan Felipe Rojas Muñoz</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span class="label">Birthday:</span>
+                                        <span class="value">19/June/2004</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span class="label">Phone:</span>
+                                        <span class="value">+57 3173324433</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-column">
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="label">E-mail:</span>
+                                        <span class="value">juanferojas19@gmail.com</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="label">City:</span>
+                                        <span class="value">Bogotá, Colombia</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-language"></i>
+                                        <span class="label">Languages:</span>
+                                        <span class="value">Spanish - English</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="professional-status">
+                            <div class="status-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span class="label">Freelancer:</span>
+                                <span class="value">Available</span>
+                            </div>
+                            <div class="status-item">
+                                <i class="fas fa-code"></i>
+                                <span class="label">I am a</span>
+                                <span class="typing-effect"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,7 +270,7 @@
 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <h4>JAVA</h4>
+                        <h4>SQL</h4>
                         <h4>52%</h4>
                     </div>
                     <div class="outer-line">
@@ -244,7 +280,7 @@
 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <h4>JAVASCRIPT</h4>
+                        <h4>Manipulación y Análisis de Datos</h4>
                         <h4>30%</h4>
                     </div>
                     <div class="outer-line">
@@ -254,7 +290,7 @@
 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <h4>HTML</h4>
+                        <h4>Estadística y probabilidad</h4>
                         <h4>85%</h4>
                     </div>
                     <div class="outer-line">
@@ -264,7 +300,7 @@
 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <h4>CSS</h4>
+                        <h4>Visualización de Datos</h4>
                         <h4>55%</h4>
                     </div>
                     <div class="outer-line">
@@ -379,7 +415,7 @@
                     <div class="port-info">
                         <h4>PYTHON CISCO</h4>
                         <p></p>
-                        <a href="pdf/Python_Essentials_1_Badge20230519-28-7irrp0.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/Python_Essentials_1_Badge20230519-28-7irrp0.pdf" target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -390,7 +426,7 @@
                     <div class="port-info">
                         <h4>ORACLE JAVA</h4>
                         <p> </p>
-                        <a href="pdf/course_certificate.pdf"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/course_certificate.pdf"target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -401,7 +437,7 @@
                     <div class="port-info">
                         <h4>INGENIERIA DE DATOS</h4>
                         <p></p>
-                        <a href="pdf/diploma-fundamentos-ingenieria-datos.pdf" target="_blank" ><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/diploma-fundamentos-ingenieria-datos.pdf" target="_blank" ><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -413,7 +449,7 @@
                     <div class="port-info">
                         <h4>FUNDAMENTOS PYTHON</h4>
                         <p> </p>
-                        <a href="pdf/diploma-python.pdf"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/diploma-python.pdf"target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -425,7 +461,7 @@
                     <div class="port-info">
                         <h4>GIT Y GITHUB</h4>
                         <p> </p>
-                        <a href="pdf/diploma-git-github.pdf"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/diploma-git-github.pdf"target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -437,7 +473,7 @@
                     <div class="port-info">
                         <h4>AMERICAN SCHOOL WAY</h4>
                         <p> </p>
-                        <a href="pdf/DIPLOMA - JUAN FELIPE ROJAS MUÑOZ.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/DIPLOMA - JUAN FELIPE ROJAS MUÑOZ.pdf" target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
 
@@ -449,7 +485,7 @@
                     <div class="port-info">
                         <h4>PYTHON AVANZADO</h4>
                         <p></p>
-                        <a href="pdf/diploma-python-funciones.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/diploma-python-funciones.pdf" target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
                 <div class="port-item">
@@ -459,7 +495,7 @@
                     <div class="port-info">
                         <h4>AWS CLOUD ACADEMY</h4>
                         <p></p>
-                        <a href="pdf/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20231205-29-16otvq.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="pdf/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20231205-29-16otvq.pdf" target="_blank"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
             </div>
@@ -530,7 +566,7 @@
                     <div class="port-info">
                         <h4>ASPIRADORA AUTOMÁTICA</h4>
                         <p>La aspiradora simula eficientemente la limpieza de una bodega, respondiendo a los cuatro estados de la habitación para una actuación óptima. </p>
-                        <a href="https://github.com/juanfero/Aspiradora-Automarica" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/juanfero/Aspiradora-Automarica" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -541,7 +577,7 @@
                     <div class="port-info">
                         <h4>WEBSITE</h4>
                         <p> La realización de mi página web, muestro mis habilidades en diseño, programación y enfoque a la experiencia del usuario.</p>
-                        <a href=""target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href=""target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -552,7 +588,7 @@
                     <div class="port-info">
                         <h4>GRAFO</h4>
                         <p>La representación de un grafo optimiza la determinación de rutas más cortas y largas, ofreciendo numerosas funcionalidades para la eficiencia.</p>
-                        <a href="https://github.com/juanfero/Grafos-JavaScript" target="_blank" ><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/juanfero/Grafos-JavaScript" target="_blank" ><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -564,7 +600,7 @@
                     <div class="port-info">
                         <h4>DISCOGRÁFIA</h4>
                         <p>Programa de digitalización de datos de artistas para búsqueda eficiente y rápida, optimizando el acceso a información relevante de manera ágil.</p>
-                        <a href="https://github.com/juanfero/Disquera/tree/master"target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/juanfero/Disquera/tree/master"target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -575,7 +611,7 @@
                     <div class="port-info">
                         <h4>ANÁLISIS DE DATOS SAN FRANCISCO</h4>
                         <p> Se analizó un conjunto de datos sobre delitos en San Francisco. Preparé, analicé, grafiqué y comuniqué conclusiones de manera efectiva.</p>
-                        <a href="https://github.com/juanfero/Datos-San_Francisco"target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/juanfero/Datos-San_Francisco"target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -589,89 +625,81 @@
         <!-- Contact section start-->
 
         <section id="contact">
-
             <h1 class="sub-heading">Contact</h1>
             <div class="divider"></div>
-            <p class="sub-para"></p>
-
             <div class="contact-row">
-
-                <div class="contact-left">
-
-                    <!-- box iformation-->
-
-                    <div class="icon-box">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
+             <div class="contact-card">
+              <div class="contact-header">
+               <div class="contact-avatar">
+                <img src="img/Emoji.jpg" alt="Juan Fernando Rojas">
+               </div>
+               <div class="contact-name">
+                <h2>Juan Felipe Rojas Muñoz</h2>
+                <p>Data Scientis - Software Developer</p>
+               </div>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
                         </div>
-
-                        <div class="info">
-                            <h4>E-mail:</h4>
-                            <p> juanferojas19@gmail.com</p>
-                        </div>
-
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>juanferojas19@gmail.com</p>
+                            </div>
+                        <div class="contact-action">
+                    <a href="mailto:juanferojas19@gmail.com" class="btn-copy" data-copy="juanferojas19@gmail.com"></a>
                     </div>
-
-                    <div class="icon-box">
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
+               </div>
+            
+               <div class="contact-item">
+                    <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="info">
-                            <h4>Phone Number:</h4>
-                            <p> +57 3173324433</p>
-                        </div>
+                            <div class="contact-info">
+                                <h4>Teléfono</h4>
+                                <p>+57 3173324433</p>
+                            </div>
+                        <div class="contact-action">
+                    <a href="tel:+573173324433" class="btn-copy" data-copy="+57 3173324433">
+                    </a>
                     </div>
-
-                    <div class="icon-box">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="info">
-                            <h4>Location:</h4>
-                            <p> Bogotá, Colombia</p>
-                        </div>
+               </div>
+               <div class="contact-item">
+                <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
                     </div>
-
-                    <!-- map-->
-
-
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.153396683617!2d-74.06391114010864!3d4.74338860544811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f850970ff2aab%3A0xa76fe7ac33f41006!2sCra.%2057%20%23160-15%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1699811486176!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
+                        <div class="contact-info">
+                            <h4>Ubicación</h4>
+                            <p>Colombia-Bogotá</p>
+                        </div>
+                    <div class="contact-action">
                 </div>
-
-                <div class="contact-right">
-
-                    <form action="">
-
-                        <input type="text" name="name" id="name" placeholder="Your Name">
-                        <input type="email" name="E-mail" id="E-mail" placeholder="Your E-mail">
-                        <input type="text" name="subject" id="subject" placeholder="Your Subject">
-                        <textarea name="msg" id="msg" rows="9" placeholder="Your Massage"></textarea>
-                        <input type="submit" value="Send Massage">
-
-                    </form>
-
-                </div>
-
-               
+           </div>
+               <div class="contact-links">
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="social-link">
+                 <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/tu-usuario" target="_blank" class="social-link">
+                 <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/573173324433" target="_blank" class="social-link">
+                 <i class="fab fa-whatsapp"></i>
+                </a>
+               </div>
+              </div>
+             </div>
             </div>
-
-
-
-
-        </section>
+           </section>
         <!-- Contact section end-->
 
     </main>
 
     <!-- Main JS File-->
-
+    
     <script src="script.js"></script>
     <!--FontAwesome JS File (Icons FIles)-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Typed.JS File (For typing Effect) -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
