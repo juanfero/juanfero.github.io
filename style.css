@@ -1452,8 +1452,8 @@ main {
 #services .service-row {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
     position: relative;
     z-index: 1;
 }
@@ -1720,11 +1720,11 @@ body.dark .contact-links .social-link:hover {
 /* Tablets grandes */
 @media only screen and (max-width: 1200px) {
     :root {
-        --header-width: 280px;
+        --header-width: 260px;
     }
     
     main {
-        margin-left: 280px;
+        margin-left: 260px;
     }
 }
 
@@ -1754,7 +1754,7 @@ body.dark .contact-links .social-link:hover {
     #home {
         text-align: center;
         align-items: center;
-        padding: 30px 20px;
+        padding: clamp(20px, 5vw, 40px);
     }
     
     #home::before {
@@ -1763,23 +1763,22 @@ body.dark .contact-links .social-link:hover {
     
     .about-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
         text-align: center;
     }
     
     .professional-status {
         flex-direction: column;
-        text-align: center;
     }
     
     #fact .fact-row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
     }
     
     #portafolio .port-row,
     #certification .port-row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
     }
     
@@ -1795,7 +1794,6 @@ body.dark .contact-links .social-link:hover {
     
     .contact-avatar {
         margin-right: 0;
-        margin-bottom: 15px;
     }
 }
 
@@ -1841,7 +1839,7 @@ body.dark .contact-links .social-link:hover {
     }
     
     #home {
-        padding: 20px 15px;
+        padding: 15px;
     }
     
     .contact-details {
