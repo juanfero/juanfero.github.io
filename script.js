@@ -13,9 +13,8 @@ const title = document.getElementById("title");
     const phrase = document.getElementById("phrase");
 
     const languages = [
-        { title: "Hola, soy <br>Pipe Rojas", phrase: "Soy <span class='auto-input'>Ingeniero de Software</span>" },
-        { title: "Hi, I'm  <br>Pipe Rojas", phrase: "I'm <span class='auto-input'>Software Engineer</span>" },
-        { title: "Bonjour, je m'appelle  <br>Pipe Rojas", phrase: "je suis  <span class='auto-input'>ingénieur logiciel</span>" }
+        { title: "Hola, soy <br>Juan Rojas", phrase: "Soy <span class='auto-input'>Ingeniero de Software</span>" },
+        { title: "Hi, I'm  <br>Juan Rojas", phrase: "I'm <span class='auto-input'>Software Engineer</span>" }
 
         //agregar dos idiomas mas 
     ];
