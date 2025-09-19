@@ -37,7 +37,8 @@ body {
 
 /* Header mejorado */
 header {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: var(--header-width);
     padding: 15px 30px;
     background-color: var(--sideBGcolor);
@@ -179,7 +180,8 @@ main {
 
 /* Sección Home mejorada */
 #home {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     background-image: url(img/Bodyforo.jpg);
     background-size: cover;
@@ -276,7 +278,7 @@ main {
 
 /* Sección About mejorada */
 .about-section {
-    padding: clamp(50px, 10vw, 80px) clamp(15px, 5vw, 50px);
+    padding: clamp(30px, 8vw, 80px) clamp(15px, 5vw, 50px);
     background-color: #f9f9f9;
 }
 
@@ -321,7 +323,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 50px;
-    align-items: center;
+    align-items: start;
 }
 
 .about-image {
@@ -1467,6 +1469,7 @@ main {
 }
 
 /* Tarjetas */
+/* Tarjetas */
 #services .service-box {
     background: white;
     border-radius: 25px;
@@ -1477,9 +1480,13 @@ main {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+
+    /* ✅ Ajuste nuevo */
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 20px;
-    align-items: flex-start;
 }
 
 #services .service-box:hover {
@@ -1737,23 +1744,44 @@ body.dark .contact-links .social-link:hover {
 }
 
 /* Tablets */
+/* LÍNEA 1094 - CORREGIR ESTA MEDIA QUERY */
 @media only screen and (max-width: 1050px) {
-    header,
+    header {
+        left: -100%;  /* Cambio crítico: de -300px a -100% */
+        width: 100%;  /* Asegurar ancho completo */
+        transition: left 0.3s ease;
+    }
+    
     header .footer {
-        left: -300px;
+        left: -100%;
+        width: 100%;
+        transition: left 0.3s ease;
+    }
+    
+    /* Mostrar cuando esté activo */
+    body.mobile-nav-active header,
+    .mobile-nav-active header {
+        left: 0 !important;
+    }
+    
+    body.mobile-nav-active header .footer,
+    .mobile-nav-active header .footer {
+        left: 0 !important;
     }
     
     main {
         margin-left: 0;
+        width: 100%;
+        padding: 0;
     }
     
     #MenuBtn {
         display: block;
+        z-index: 9999;
     }
     
-    .mobile-nav-active header,
-    .mobile-nav-active header .footer {
-        left: 0;
+    .about-section {
+        padding-top: clamp(20px, 5vw, 40px);
     }
 }
 
@@ -1773,6 +1801,15 @@ body.dark .contact-links .social-link:hover {
         grid-template-columns: 1fr;
         gap: 25px;
         text-align: center;
+    }
+    .about-section {
+        padding: clamp(25px, 6vw, 60px) clamp(12px, 4vw, 30px);
+    }
+    .about-intro .description,
+    .about-bio p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 12px;
     }
     
     .professional-status {
@@ -1803,10 +1840,128 @@ body.dark .contact-links .social-link:hover {
     .contact-avatar {
         margin-right: 0;
     }
+    .section-title {
+        font-size: clamp(1.8rem, 7vw, 2.2rem);
+        margin-bottom: 15px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .professional-status {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
 }
 
 /* Móviles pequeños */
+/* Móviles pequeños */
 @media only screen and (max-width: 480px) {
+    /* ========== CORRECCIONES DEL NAVBAR/LAYOUT ========== */
+    main {
+        margin-left: 0 !important;
+        width: 100%;
+        padding: 0;
+    }
+    
+    header {
+        width: 100%;
+    }
+    
+    header .footer {
+        width: 100%;
+    }
+    
+    /* ========== CORRECCIONES ABOUT SECTION ========== */
+    .about-section {
+        padding: 20px 12px;
+        margin-top: 0;
+    }
+    
+    .container {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 8vw, 1.8rem);
+        margin-bottom: 12px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .about-intro .greeting {
+        font-size: clamp(1.2rem, 6vw, 1.4rem);
+        margin-bottom: 10px;
+    }
+    
+    .about-intro .description,
+    .about-bio p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+        max-width: 100%;
+    }
+    
+    .personal-info {
+        margin-top: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+    
+    .info-item .label {
+        min-width: auto;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .info-item .value {
+        font-size: 14px;
+    }
+    
+    .info-item i {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    .professional-status {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 12px;
+    }
+    
+    /* Ajustar imagen de perfil */
+    .profile-image {
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .image-wrapper {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    /* ========== TUS REGLAS ORIGINALES ========== */
     #home .home-row br {
         display: none;
     }
@@ -1814,10 +1969,6 @@ body.dark .contact-links .social-link:hover {
     #fact .fact-row,
     #portafolio .port-row,
     #certification .port-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .info-grid {
         grid-template-columns: 1fr;
     }
     
@@ -1831,12 +1982,70 @@ body.dark .contact-links .social-link:hover {
         margin-bottom: 15px;
     }
     
-    header {
-        width: 100%;
+    /* ========== CORRECCIONES ADICIONALES ========== */
+    /* Home section */
+    #home {
+        min-height: 100vh;
+        height: auto;
+        padding: 20px 15px;
+        text-align: center;
+        align-items: center;
     }
     
-    header .footer {
-        width: 100%;
+    /* Skills section */
+    #skills .skill-col {
+        padding: 20px 15px;
+    }
+    
+    /* Resume section */
+    .about-content,
+    #resume .resume-row {
+        gap: 20px;
+    }
+    
+    #resume .resume-cols {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    /* Contact section */
+    .contact-details {
+        padding: 20px;
+    }
+    
+    .contact-header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-avatar {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    /* Services section */
+    #services .service-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    #services .service-box {
+        padding: 25px 15px;
+    }
+    
+    /* Facts section */
+    #fact .fact-row .fact-box {
+        padding: 25px 15px;
+    }
+    
+    /* Asegurar que no haya overflow horizontal */
+    body,
+    main,
+    .container,
+    .about-content {
+        overflow-x: hidden;
+        max-width: 100%;
     }
 }
 
